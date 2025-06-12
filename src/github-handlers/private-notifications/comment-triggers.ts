@@ -1,4 +1,4 @@
-import { Context } from "../../types";
+import { Context } from "../../types/index";
 import { StorageUser } from "../../types/storage";
 import { CallbackResult } from "../../types/proxy";
 import { logger } from "../../utils/logger";

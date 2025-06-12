@@ -2,7 +2,7 @@
 import input from "input";
 // @ts-expect-error no types
 import sodium from "libsodium-wrappers";
-import { Context } from "../../../../types";
+import { Context } from "../../../../types/index";
 import { exit } from "node:process";
 import { Octokit } from "@octokit/rest";
 import dotenv from "dotenv";

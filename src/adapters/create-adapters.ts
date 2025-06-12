@@ -1,4 +1,4 @@
-import { Context } from "../types";
+import { Context } from "../types/index";
 import { SessionManagerFactory } from "../workflow-bot-mtproto-api/bot/session/session-manager";
 import { UserBaseStorage, ChatAction, HandleChatParams, StorageTypes, RetrievalHelper, Chat } from "../types/storage";
 import { Completions } from "./openai/openai";

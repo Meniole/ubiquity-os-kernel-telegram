@@ -1,7 +1,7 @@
 import * as core from "@actions/core";
 import * as github from "@actions/github";
 import { Value } from "@sinclair/typebox/value";
-import { envValidator, pluginSettingsSchema, PluginInputs, pluginSettingsValidator, Env } from "./types";
+import { envValidator, pluginSettingsSchema, PluginInputs, pluginSettingsValidator, Env } from "./types/index";
 import { PluginEnvContext } from "./types/plugin-env-context";
 import { logger } from "./utils/logger";
 import dotenv from "dotenv";

@@ -4,7 +4,7 @@ import { server } from "./__mocks__/node";
 import { expect, describe, beforeAll, beforeEach, afterAll, afterEach, it, jest } from "@jest/globals";
 import { setupTests } from "./__mocks__/helpers";
 import dotenv from "dotenv";
-import { Env } from "../src/types";
+import { Env } from "../src/types/index";
 import manifest from "../manifest.json";
 import worker from "../src/worker";
 

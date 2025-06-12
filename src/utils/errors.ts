@@ -1,5 +1,5 @@
 import { LogReturn } from "@ubiquity-os/ubiquity-os-logger";
-import { Context } from "../types";
+import { Context } from "../types/index";
 import { logger } from "./logger";
 import { addCommentToIssue } from "./add-comment-to-issues";
 

@@ -1,4 +1,4 @@
-import { Context, Env, envValidator, PluginInputs, pluginSettingsValidator } from "./types";
+import { Context, Env, envValidator, PluginInputs, pluginSettingsValidator } from "./types/index";
 import { PluginEnvContext } from "./types/plugin-env-context";
 import { ExecutionContext } from "hono";
 import { createPlugin } from "@ubiquity-os/plugin-sdk";

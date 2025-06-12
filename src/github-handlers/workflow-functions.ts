@@ -1,4 +1,4 @@
-import { Context } from "../types";
+import { Context } from "../types/index";
 import { CallbackResult } from "../types/proxy";
 import { workflowDispatch } from "./workflow-dispatch";
 

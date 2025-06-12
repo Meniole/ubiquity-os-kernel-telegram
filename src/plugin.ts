@@ -1,4 +1,4 @@
-import { Context } from "./types";
+import { Context } from "./types/index";
 import { workerCallbacks } from "./github-handlers/worker-proxy";
 import { proxyWorkflowCallbacks } from "./github-handlers/workflow-proxy";
 import { sendBotFatherRequest } from "./botfather-bot/send-botfather-request";

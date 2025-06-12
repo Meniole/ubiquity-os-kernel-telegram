@@ -1,9 +1,9 @@
 import { TelegramClient } from "telegram";
-import { Api } from "telegram/tl";
+import { Api } from "telegram/tl/index.js";
 import { TelegramClientParams } from "telegram/client/telegramBaseClient";
 import dotenv from "dotenv";
-import { StringSession } from "telegram/sessions";
-import { Context } from "../../../../types";
+import { StringSession } from "telegram/sessions/index.js";
+import { Context } from "../../../../types/index";
 dotenv.config();
 
 /**

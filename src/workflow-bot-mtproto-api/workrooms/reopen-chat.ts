@@ -1,5 +1,5 @@
 import bigInt from "big-integer";
-import { Context } from "../../types";
+import { Context } from "../../types/index";
 import { CallbackResult } from "../../types/proxy";
 import { Api } from "telegram";
 import { Chat } from "../../types/storage";

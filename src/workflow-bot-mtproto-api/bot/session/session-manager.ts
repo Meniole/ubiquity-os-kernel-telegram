@@ -1,10 +1,10 @@
-import { Context } from "../../../types";
+import { createClient, SupabaseClient } from "@supabase/supabase-js";
+import { StringSession } from "telegram/sessions/index.js";
 import { GithubStorage } from "../../../adapters/github/storage-layer";
 import { SupabaseStorage } from "../../../adapters/supabase/supabase";
+import { Context } from "../../../types/index";
 import { GitHubSession } from "./github-session";
 import { SupabaseSession } from "./supabase-session";
-import { StringSession } from "telegram/sessions";
-import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
 export interface SessionManager extends StringSession {
   getStorageHandler(): GithubStorage | SupabaseStorage;

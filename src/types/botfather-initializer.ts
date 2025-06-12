@@ -6,7 +6,7 @@ import { PluginEnvContext } from "./plugin-env-context";
 import { Hono } from "hono";
 import { HTTPException } from "hono/http-exception";
 import { webhookCallback } from "grammy";
-import { Context as UbiquityOsContext } from "../types";
+import { Context as UbiquityOsContext } from "../types/index";
 import { Logger } from "../utils/logger";
 import { setLogger } from "../botfather-bot/middlewares/logger";
 import { requestLogger } from "../botfather-bot/middlewares/request-logger";
