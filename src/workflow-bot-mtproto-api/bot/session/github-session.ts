@@ -1,4 +1,4 @@
-import { StringSession } from "telegram/sessions";
+import { StringSession } from "telegram/sessions/index";
 import { GithubStorage } from "../../../adapters/github/storage-layer";
 import { SessionManager } from "./session-manager";
 
