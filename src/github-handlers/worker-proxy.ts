@@ -1,4 +1,4 @@
-import { Context, SupportedEventsU } from "../types";
+import { Context, SupportedEventsU } from "../types/index";
 import { ProxyCallbacks } from "../types/proxy";
 import { bubbleUpErrorComment } from "../utils/errors";
 import { notificationsRequiringComments } from "./private-notifications/comment-triggers";

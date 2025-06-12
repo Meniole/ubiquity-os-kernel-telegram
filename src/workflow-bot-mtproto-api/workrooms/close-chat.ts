@@ -1,6 +1,6 @@
 import { Api } from "telegram";
 import bigInt from "big-integer";
-import { Context } from "../../types";
+import { Context } from "../../types/index";
 import { CallbackResult } from "../../types/proxy";
 import { GithubStorage } from "../../adapters/github/storage-layer";
 import { SupabaseStorage } from "../../adapters/supabase/supabase";

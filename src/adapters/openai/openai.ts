@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import { logger } from "../../utils/logger";
-import { Context } from "../../types";
+import { Context } from "../../types/index";
 
 export class Completions {
   protected client: OpenAI;

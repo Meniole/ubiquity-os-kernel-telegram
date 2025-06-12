@@ -1,4 +1,4 @@
-import { Context } from "../../../types";
+import { Context } from "../../../types/index";
 import { GithubStorage } from "../../../adapters/github/storage-layer";
 import { SupabaseStorage } from "../../../adapters/supabase/supabase";
 import { GitHubSession } from "./github-session";

@@ -1,5 +1,5 @@
 import { App } from "octokit";
-import { Context } from "../types";
+import { Context } from "../types/index";
 
 export async function workflowDispatch(context: Context, workflowFunctionName: string) {
   const inputs = context.pluginEnvCtx.getInputs();

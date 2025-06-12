@@ -1,6 +1,6 @@
 import { SupabaseClient } from "@supabase/supabase-js";
 import { StringSession } from "telegram/sessions";
-import { Context } from "../../../types";
+import { Context } from "../../../types/index";
 import { SessionManager } from "./session-manager";
 import { SupabaseStorage } from "../../../adapters/supabase/supabase";
 

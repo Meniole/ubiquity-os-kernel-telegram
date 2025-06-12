@@ -1,5 +1,5 @@
 import { Api } from "telegram";
-import { Context } from "../../types";
+import { Context } from "../../types/index";
 import bigInt from "big-integer";
 import dotenv from "dotenv";
 import { addCommentToIssue } from "../../utils/add-comment-to-issues";

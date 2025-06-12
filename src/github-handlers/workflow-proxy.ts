@@ -1,7 +1,7 @@
 import { closeChat } from "../workflow-bot-mtproto-api/workrooms/close-chat";
 import { createChat } from "../workflow-bot-mtproto-api/workrooms/create-chat";
 import { reopenChat } from "../workflow-bot-mtproto-api/workrooms/reopen-chat";
-import { Context, SupportedEventsU } from "../types";
+import { Context, SupportedEventsU } from "../types/index";
 import { ProxyCallbacks } from "../types/proxy";
 import { bubbleUpErrorComment } from "../utils/errors";
 import { logger } from "../utils/logger";

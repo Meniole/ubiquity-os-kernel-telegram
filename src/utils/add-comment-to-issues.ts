@@ -1,4 +1,4 @@
-import { Context } from "../types";
+import { Context } from "../types/index";
 
 /**
  * Ideally pass in owner, repo, and issueNumber, but if not provided,

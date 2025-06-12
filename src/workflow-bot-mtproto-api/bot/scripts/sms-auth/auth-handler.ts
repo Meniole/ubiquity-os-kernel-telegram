@@ -3,7 +3,7 @@ import input from "input";
 import dotenv from "dotenv";
 import { createClient, SupabaseClient } from "@supabase/supabase-js";
 import { BaseMtProto } from "./base-mtproto";
-import { Context } from "../../../../types";
+import { Context } from "../../../../types/index";
 import { logger } from "../../../../utils/logger";
 dotenv.config();
 

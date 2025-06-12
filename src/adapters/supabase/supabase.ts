@@ -1,6 +1,6 @@
 import { SupabaseClient } from "@supabase/supabase-js";
 import { logger } from "../../utils/logger";
-import { Context } from "../../types";
+import { Context } from "../../types/index";
 import { ChatAction, HandleChatParams, RetrievalHelper, StorageTypes, UserBaseStorage } from "../../types/storage";
 import { StorageGetters } from "./storage-getters";
 import { isChatsStorage, isUserBaseStorage, isSingleChatStorage, isSessionStorage } from "../storage-guards";
