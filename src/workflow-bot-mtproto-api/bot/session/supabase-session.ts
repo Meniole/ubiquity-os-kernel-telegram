@@ -1,8 +1,9 @@
 import { SupabaseClient } from "@supabase/supabase-js";
-import { StringSession } from "telegram/sessions";
+// It is important to add the .js extension so ESM imports this file properly
+import { StringSession } from "telegram/sessions/index.js";
+import { SupabaseStorage } from "../../../adapters/supabase/supabase";
 import { Context } from "../../../types/index";
 import { SessionManager } from "./session-manager";
-import { SupabaseStorage } from "../../../adapters/supabase/supabase";
 
 /**
  * This class extends the StringSession class from the Telegram library.
