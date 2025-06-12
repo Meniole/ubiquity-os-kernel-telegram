@@ -1,4 +1,4 @@
-import type { Update, UserFromGetMe } from "@grammyjs/types/index";
+import type { Update, UserFromGetMe } from "@grammyjs/types";
 import { Octokit } from "@octokit/rest";
 import { type Api, Context as DefaultContext, type SessionFlavor } from "grammy";
 import type { AutoChatActionFlavor } from "@grammyjs/auto-chat-action";
