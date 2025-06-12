@@ -1,4 +1,4 @@
-import type { BotCommand } from "@grammyjs/types/index";
+import type { BotCommand } from "@grammyjs/types";
 import type { CommandContext } from "grammy";
 import { logger } from "../utils/logger";
 import { GrammyContext } from "./create-grammy-context";
