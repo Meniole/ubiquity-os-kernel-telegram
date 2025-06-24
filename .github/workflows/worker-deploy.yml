@@ -38,7 +38,6 @@ jobs:
             APP_PRIVATE_KEY
             CLOUDFLARE_ACCOUNT_ID
             CLOUDFLARE_API_TOKEN
-            OPENAI_API_KEY
             OPENROUTER_API_KEY
             VOYAGEAI_API_KEY
         env:
@@ -47,7 +46,6 @@ jobs:
           APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           VOYAGEAI_API_KEY: ${{ secrets.VOYAGEAI_API_KEY }}
 

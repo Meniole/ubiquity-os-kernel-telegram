@@ -44,7 +44,6 @@ class SetUpHandler {
     APP_PRIVATE_KEY: "",
     VOYAGEAI_API_KEY: "",
     KERNEL_PUBLIC_KEY: undefined,
-    OPENAI_API_KEY: undefined,
     OPENROUTER_API_KEY: undefined,
     TEMP_SAFE_PAT: undefined,
   } as unknown as Context["env"];
@@ -177,11 +176,6 @@ class SetUpHandler {
         },
         {
           type: "input",
-          name: "OPENAI_API_KEY",
-          message: "Enter your OpenAI API key. This can be obtained from the OpenAI dashboard.",
-        },
-        {
-          type: "input",
           name: "OPENROUTER_API_KEY",
           message: "Enter your OpenRouter API key. This can be obtained from the OpenRouter dashboard.",
         },
@@ -251,7 +245,6 @@ class SetUpHandler {
         },
       },
       VOYAGEAI_API_KEY: answers["Storage settings"]["VOYAGEAI_API_KEY"],
-      OPENAI_API_KEY: answers["Storage settings"]["OPENAI_API_KEY"],
       OPENROUTER_API_KEY: answers["Storage settings"]["OPENROUTER_API_KEY"],
       KERNEL_PUBLIC_KEY: answers["Storage settings"]["KERNEL_PUBLIC_KEY"],
     };
@@ -287,7 +280,6 @@ class SetUpHandler {
       "TELEGRAM_APP_ID",
       "SUPABASE_SERVICE_KEY",
       "VOYAGEAI_API_KEY",
-      "OPENAI_API_KEY",
       "OPENROUTER_API_KEY",
     ];
     let answer;
@@ -356,7 +348,6 @@ class SetUpHandler {
     const storageAppId = `APP_ID=${this.env.APP_ID}`;
     const storageAppPrivateKey = `APP_PRIVATE_KEY=${this.env.APP_PRIVATE_KEY}`;
     const voyageaiApiKey = `VOYAGEAI_API_KEY=${this.env.VOYAGEAI_API_KEY}`;
-    const openaiApiKey = `OPENAI_API_KEY=${this.env.OPENAI_API_KEY}`;
     const openrouterApiKey = `OPENROUTER_API_KEY=${this.env.OPENROUTER_API_KEY}`;
     const kernelPublicKey = `KERNEL_PUBLIC_KEY=${this.env.KERNEL_PUBLIC_KEY}`;
 
@@ -366,7 +357,6 @@ class SetUpHandler {
       storageAppId,
       storageAppPrivateKey,
       voyageaiApiKey,
-      openaiApiKey,
       openrouterApiKey,
       this.env.KERNEL_PUBLIC_KEY ? kernelPublicKey : "",
     ];

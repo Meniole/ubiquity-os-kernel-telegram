@@ -2,13 +2,7 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "types": [
-      "jest",
-      "node",
-      "@cloudflare/workers-types/2023-07-01"
-    ] /* Specify type package names to be included without being referenced in a source file. */,
-    "lib": ["ESNext"],
+    "moduleResolution": "bundler",
     "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
     "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
     "strict": true /* Enable all strict type-checking options. */,
