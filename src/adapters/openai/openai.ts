@@ -1,6 +1,6 @@
 import OpenAI from "openai";
-import { logger } from "../../utils/logger";
 import { Context } from "../../types/index";
+import { logger } from "../../utils/logger";
 
 export class Completions {
   protected client: OpenAI;
@@ -9,13 +9,13 @@ export class Completions {
     const {
       env,
       config: {
-        aiConfig: { baseUrl, kind },
+        aiConfig: { baseUrl },
       },
     } = context;
-    const apiKey = kind === "OpenAi" ? env.OPENAI_API_KEY : env.OPENROUTER_API_KEY;
+    const apiKey = env.OPENROUTER_API_KEY;
 
     if (!apiKey) {
-      throw new Error(`Plugin is configured to use ${kind} but ${kind === "OpenAi" ? "OPENAI_API_KEY" : "OPENROUTER_API_KEY"} is not set in the environment`);
+      throw new Error(`OPENROUTER_API_KEY is not set in the environment.`);
     }
 
     this.client = new OpenAI({
