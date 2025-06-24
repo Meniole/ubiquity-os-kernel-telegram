@@ -29,7 +29,11 @@ export const pluginSettingsSchema = T.Object({
   fuzzySearchThreshold: T.Number({ default: 0.2, description: "The threshold for fuzzy search when invoking the `/newtask` command (0 is a perfect match)." }),
   aiConfig: T.Object(
     {
-      model: T.String({ default: "openai/o1-mini", description: "The model to use.", examples: ["openai/o1-mini", "openai/gpt-4o"] }),
+      model: T.String({
+        default: "deepseek/deepseek-chat-v3-0324:free",
+        description: "The model to use.",
+        examples: ["deepseek/deepseek-chat-v3-0324:free", "openai/gpt-4o"],
+      }),
       baseUrl: T.String({
         default: "https://openrouter.ai/api/v1",
         description: "The base URL of the API.",
@@ -37,7 +41,7 @@ export const pluginSettingsSchema = T.Object({
       }),
       similarityThreshold: T.Number({ default: 0.9, description: "The similarity threshold for when fetching embeddings-based context." }),
     },
-    { default: { model: "openai/o1-mini", baseUrl: "https://openrouter.ai/api/v1" } }
+    { default: {} }
   ),
 });
 
