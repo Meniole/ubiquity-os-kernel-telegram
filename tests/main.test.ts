@@ -1,12 +1,12 @@
+import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, it, jest } from "@jest/globals";
 import { drop } from "@mswjs/data";
-import { db } from "./__mocks__/db";
-import { server } from "./__mocks__/node";
-import { expect, describe, beforeAll, beforeEach, afterAll, afterEach, it, jest } from "@jest/globals";
-import { setupTests } from "./__mocks__/helpers";
 import dotenv from "dotenv";
-import { Env } from "../src/types/index";
 import manifest from "../manifest.json";
+import { Env } from "../src/types/index";
 import worker from "../src/worker";
+import { db } from "./__mocks__/db";
+import { setupTests } from "./__mocks__/helpers";
+import { server } from "./__mocks__/node";
 
 dotenv.config();
 
