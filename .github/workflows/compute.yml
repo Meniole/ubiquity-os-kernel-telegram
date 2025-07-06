@@ -25,6 +25,7 @@ jobs:
     name: "Kernel-Telegram"
     runs-on: ubuntu-latest
     permissions: write-all
+    environment: ${{ (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')) && 'main' || 'development' }}
     env:
       TELEGRAM_BOT_ENV: ${{ secrets.TELEGRAM_BOT_ENV }}
       APP_ID: ${{ secrets.APP_ID }}
